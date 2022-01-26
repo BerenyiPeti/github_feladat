@@ -1,0 +1,116 @@
+main, header, nav, article, footer{
+    margin: 0px;
+}
+
+main{
+    margin: auto;
+    display: grid;
+    max-width: 800px;
+    grid-template-areas: "he he he"
+                         "na na na"
+                         "as ar ar"
+                         "fo fo fo";
+}
+
+header{
+    grid-area: he;
+    
+}
+
+nav{
+    grid-area: na;
+}
+
+article{
+    grid-area: ar;
+}
+
+aside{
+    grid-area: as;
+}
+
+footer{
+    grid-area: fo;
+    text-align: center;
+    color: white;
+}
+
+.tarolok, .navtarolo{
+    border: 3px solid rgb(0,13,204);
+    border-radius: 7px;
+    margin: 5px;
+    
+}
+
+.tarolok{
+    background-color: rgb(0,191,255);
+}
+
+.navtarolo{
+    background-color: rgb(0,136,204);
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+nav ul li{
+    float: left;
+    list-style-type: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+nav a{
+    color: rgb(247, 224, 143);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.aktiv{
+    background-color: rgb(0,191,255);
+}
+
+h2{
+    font-weight: bold;
+}
+
+article ul{
+    padding-left: 35px;
+}
+
+article ul li{
+    list-style-type: decimal;
+}
+
+img{
+    border: 3px solid rgb(0,170,252);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 650px) {
+    main{
+        grid-template-areas:"he"
+                            "na"
+                            "ar"
+                            "as"
+                            "fo";
+    }
+
+    nav ul li{
+        float: unset;
+    }
+
+   
+}

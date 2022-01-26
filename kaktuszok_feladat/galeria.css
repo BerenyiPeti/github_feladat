@@ -1,0 +1,29 @@
+.kepek{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+img{
+    margin-bottom: 15px;
+}
+
+article{
+    margin: 5px;
+}
+
+@media screen and (max-width: 650px) {
+    main{
+        grid-template-areas:"he"
+                            "na"
+                            "ar"
+                            "fo";
+    }
+
+    .kepek{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+   
+}
